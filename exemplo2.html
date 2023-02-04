@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguer Button</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        }
+
+        #toggle-button {
+        display: none;
+        padding: 10px;
+        font-size: 24px;
+        cursor: pointer;
+        }
+
+        #menu {
+        display: flex;
+        flex-wrap: wrap;
+        }
+
+        #menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        }
+
+        #menu li {
+        margin: 0 10px;
+        }
+
+        #menu a {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+        }
+
+        @media (max-width: 768px) {
+        #menu {
+            display: none;
+        }
+
+        #toggle-button {
+            display: block;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button id="toggle-button">&#9776;</button>
+    <nav id="menu">
+        <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+        </ul>
+    </nav>
+    <script>
+        $(document).ready(function() {
+        $("#toggle-button").click(function() {
+        $("#menu").toggle();
+    });
+    });
+    </script>
+    </header>
+</body>
+</html>
