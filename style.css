@@ -70,11 +70,16 @@ div#container {
 div.button {
     position: absolute;
     width: 45px;
-    height: 25px;
-    top: 6px;
-    left: 5px;
+    height: 100%;
+    top: 0;
+    left: 10px;
     background-color: rgb(134, 49, 49);
+    cursor: pointer;
+}
 
+div.button-menu {
+    left: auto;
+    right: 10px;
 }
 
 div#menu-lateral {
@@ -173,11 +178,11 @@ footer {
         height: 37px;
     }
     div.button {
-        width: 200px;
+        position: relative;
         display: inline-block;
-    }
-    div.button-menu {
-        left: auto;
-        right: 5px;
+        width: 45px;
+        height: 37px;
+        top: -10px;
+        margin: 0px 35px;
     }
 }
