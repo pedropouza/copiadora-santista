@@ -69,17 +69,15 @@ div#container {
 
 div.button {
     position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 45px;
     height: 100%;
     top: 0;
     left: 10px;
     background-color: rgb(134, 49, 49);
     cursor: pointer;
-}
-
-div.button-menu {
-    left: auto;
-    right: 10px;
 }
 
 div#menu-lateral {
@@ -179,7 +177,9 @@ footer {
     }
     div.button {
         position: relative;
-        display: inline-block;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
         width: 45px;
         height: 37px;
         top: -10px;
