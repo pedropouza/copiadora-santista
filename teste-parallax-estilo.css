@@ -12,7 +12,9 @@
 }
 
 html, body {
-    background-color: rgb(44, 44, 44);
+    background-image: url(imagens/fundo.jfif);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 main {
