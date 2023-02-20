@@ -20,6 +20,12 @@ html, body {
 main {
     max-width: 700px;
     margin: auto;
+    position: relative;
+}
+
+section {
+    position: sticky;
+    top: 0;
 }
 
 section.imagem {
