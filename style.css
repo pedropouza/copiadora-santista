@@ -23,6 +23,8 @@ body {
     background-color: rgb(231, 244, 255);
 }
 
+/* CABEÇALHO */
+
 header {
     background-color: #63ccca;
     padding: 15px;
@@ -45,28 +47,65 @@ header p {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.377);
 }
 
+/* MENU DE NAVEGAÇÃO */
+
 nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: sticky;
     z-index: 1;
     top: 0;
     background-color: #42858c;
     text-align: center;
-    padding: 10px;
 }
 
 nav a {
     color: #fff;
     padding: 10px;
-    margin-right: 5px;
     text-decoration: none;
     font-size: 1em;
 }
 
-div#container {
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+nav li {
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 0;
+    height: 2.3px;
+    width: 0;
+    border-radius: 999px;
+    background-color: #333;
+    transition: width 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* CONTAINER: Aside + Main */
+
+#container {
     display: flex;
     height: 650px;
 }
 
+/* 
 div.button {
     position: absolute;
     display: inline-flex;
@@ -79,10 +118,15 @@ div.button {
     background-color: rgb(134, 49, 49);
     cursor: pointer;
 }
+*/
 
-div#menu-lateral {
-    width: 200px;
+/* ASIDE */
+
+aside {
+    min-width: 200px;
 }
+
+/* ASIDE: Menu Lateral */
 
 #menu li {
     list-style: none;
@@ -101,6 +145,8 @@ div#menu-lateral {
 #menu li a:hover {
     background-color: #4e4e4e;
 }
+
+/* ASIDE: Horario */
 
 #horario {
     margin-top: 10px;
@@ -130,11 +176,15 @@ div#menu-lateral {
     margin-bottom: 10px;
     font-weight: bold;
     font-size: 0.95em;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.724);
 }
 
 .open-close span {
+    text-shadow: none;
     color: green;
 }
+
+/* PRINCIPAL: Onde vai ficar o conteudo */
 
 main {
     background-color: #fff;
@@ -142,6 +192,8 @@ main {
     width: 100%;
     margin: 0 10px;
 }
+
+/* RODAPÉ */
 
 footer {
     background-color: #35393c;
@@ -151,8 +203,8 @@ footer {
     color: #fff;
 }
 
-
-@media (max-width: 768px) {     /* Estilo para telas menores que 768px */
+/* 
+@media (max-width: 768px) {     Estilo para telas menores que 768px
     div#menu-lateral {
         display: none;
     }
@@ -161,7 +213,7 @@ footer {
     }
 }
 
-@media (min-width: 769px) {     /* Estilo para telas maiores que 769px */
+@media (min-width: 769px) {     Estilo para telas maiores que 769px
     div.button {
         display: none;
     }
@@ -185,3 +237,4 @@ footer {
         margin: 0px 25px;
     }
 }
+ */
