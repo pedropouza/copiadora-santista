@@ -29,7 +29,7 @@ section {
 }
 
 section.imagem {
-    margin: 20px 0;
+    margin: 20px 10px;
     height: 100vh;
     max-width: 700px;
     background-position: center;
