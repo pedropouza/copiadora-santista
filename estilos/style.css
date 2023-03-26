@@ -134,6 +134,7 @@ main > h1 {
 
 main > p {
     text-indent: 20px;
+    text-align: justify;
     margin-bottom: 10px;
     font-family: var(--fonte-p);
     font-size: 1.1em;
