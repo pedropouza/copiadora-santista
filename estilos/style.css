@@ -13,6 +13,7 @@
     --fonte-titulo: 'Rubik', sans-serif;
     --font-subtitulo: 'Montserrat', sans-serif;
     --cor-header: #5dafb8;
+    --cor-fundo: #A0B2A6;
     --cor-nav: #42858c;
     --fonte-h1: 'Alkatra', cursive;
     --fonte-p: 'Roboto Condensed', sans-serif;
@@ -27,7 +28,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    background-color: #A0B2A6;
+    background-color: var(--cor-fundo);
 }
 
 /* CABEÇALHO */
@@ -125,7 +126,7 @@ main {
 }
 
 main > h1 {
-    background-image: linear-gradient(to right, #A0B2A6, #fff);
+    background-image: linear-gradient(to right, var(--cor-fundo), #fff);
     font-family: var(--fonte-h1);
     font-size: 2em;
     padding: 3px 20px;
@@ -140,20 +141,32 @@ main > p {
     font-size: 1.1em;
 }
 
-/* 
-div.button {
-    position: absolute;
-    display: inline-flex;
-    justify-content: center;
+/* Imagens */
+
+#itens {
+    width: 100%;
+    background-image: linear-gradient(to left, #6e7a72, #fff, #fff, #6e7a72);
+    height: max-content;
+    display: flex;
     align-items: center;
-    width: 45px;
-    height: 100%;
-    top: 0;
-    left: 10px;
-    background-color: rgb(134, 49, 49);
-    cursor: pointer;
+    flex-direction: column;
+    gap: 10px;
 }
-*/
+
+#carimbo {
+    width: 400px;
+    height: 400px;
+    background: url(../imagens/carimbo.jpg) no-repeat;
+    background-size: cover;
+}
+
+#encadernacao {
+    width: 400px;
+    height: 400px;
+    background: url(../imagens/encadernacao.jpg) no-repeat;
+    background-size: cover;
+}
+
 
 /* ASIDE */
 
