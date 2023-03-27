@@ -13,6 +13,7 @@
         font-size: 1.5em;
         color: white;
         border-radius: 50%;
+        user-select: none;
     }
     #botao:hover {
         background-color: #4e4e4e;
