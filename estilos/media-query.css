@@ -25,3 +25,10 @@
         padding-left: 20px;
     }
 }
+
+@media screen and (max-width: 550px) {
+    #botao {
+        position: initial;
+        margin-right: 10px;
+    }
+}   
