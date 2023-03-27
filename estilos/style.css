@@ -67,6 +67,7 @@ nav {
     background-color: var(--cor-nav);
     text-align: center;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.462);
+    overflow: hidden;
 }
 
 nav a {
@@ -107,6 +108,10 @@ nav a:hover::after {
     width: 100%;
 }
 
+#botao {
+    display: none;
+}
+
 /* CONTAINER: Aside + Main */
 
 #container {
@@ -145,26 +150,51 @@ main > p {
 
 #itens {
     width: 100%;
-    background-image: linear-gradient(to left, #6e7a72, #fff, #fff, #6e7a72);
+    background-image: linear-gradient(to left, #fff, var(--cor-fundo), #fff);
     height: max-content;
     display: flex;
     align-items: center;
     flex-direction: column;
     gap: 10px;
+    overflow: hidden;
+}
+
+#itens div:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.483);
+}
+
+#itens div {
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#itens span {
+    display: inline-block;
+    color: white;
+    background-color: #333333c9;
+    text-align: center;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    text-shadow: 1px 1px 1px black;
+    padding: 20px;
+    margin-top: 15px;
+    width: 100%;
 }
 
 #carimbo {
-    width: 400px;
-    height: 400px;
     background: url(../imagens/carimbo.jpg) no-repeat;
-    background-size: cover;
 }
 
 #encadernacao {
-    width: 400px;
-    height: 400px;
     background: url(../imagens/encadernacao.jpg) no-repeat;
-    background-size: cover;
+}
+
+#copia {
+    background: url(../imagens/copias.jpg) no-repeat;
 }
 
 

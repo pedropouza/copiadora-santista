@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 768px) {
+    #botao {
+        display: flex;
+        position: absolute;
+        left: 15px;
+        padding: 7px;
+        cursor: pointer;
+        text-align: center;
+        justify-content: center;
+        background-color: #333;
+        font-size: 1.5em;
+        color: white;
+        border-radius: 50%;
+    }
+    #botao:hover {
+        background-color: #4e4e4e;
+    }
+    aside {
+        display: none;
+        width: 100%;
+    }
+    #menu li a {
+        padding-left: 20px;
+    }
+}

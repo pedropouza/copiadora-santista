@@ -6,19 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Copiadora Santista</title>
     <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../estilos/media-query.css">
 </head>
-<body>
+<body onresize="redimensiona()">
     <header>
         <h1>Copiadora Santista</h1>
         <p>Tudo o que você precisa, na palma da sua mão!</p>
     </header>
     <nav>
-        <!-- <div class="button button-lateral">
-            Serv
-        </div>
-        <div class="button button-menu">
-            Menu
-        </div> -->
+        <span id="botao" class="material-symbols-outlined" onclick="showMenu()">menu</span>
         <ul>
             <li><a href="../index.html">Home</a></li>
             <li><a href="../index-menus/contato.html">Fale Conosco</a></li>
@@ -26,7 +23,7 @@
         </ul>
     </nav>
     <div id="container">
-        <aside>
+        <aside id="lateral">
             <div id="menu">
                 <ul>
                     <li><a href="../menu-lateral/copia.html">Impressão / Cópia</a></li>
@@ -50,12 +47,32 @@
                 </div>
             </div>
         </aside>
-        <main>
-            <h1>Placa Personalizadas</h1>
+        <main id="conteudo">
+            <h1>Placas Personalizadas</h1>
         </main>
     </div>
     <footer>
         <p>Projeto criado por Pedro Henrique</p>
     </footer>
+    <script>
+        function showMenu() {
+            if (lateral.style.display == "none") {
+                lateral.style.display = "block"
+                conteudo.style.display = "none"
+            } else {
+                lateral.style.display = "none"
+                conteudo.style.display = "block"
+            }
+        }
+        function redimensiona() {
+            if (window.innerWidth >= 768) {
+                lateral.style.display = "block"
+                conteudo.style.display = "block"
+            } else {
+                lateral.style.display = "none"
+                conteudo.style.display = "block"
+            }
+        }
+    </script>
 </body>
 </html>
