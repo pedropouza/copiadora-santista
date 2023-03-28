@@ -152,6 +152,7 @@ main > p {
 
 #itens {
     width: 100%;
+    padding: 10px 0 10px 0;
     background-image: linear-gradient(to left, #fff, var(--cor-fundo), #fff);
     height: max-content;
     display: flex;
