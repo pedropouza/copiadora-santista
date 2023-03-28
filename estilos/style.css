@@ -202,13 +202,13 @@ main > p {
 }
 
 
-/* ASIDE */
+/* MENU LATERAL */
 
 menu {
     min-width: 200px;
 }
 
-/* ASIDE: Menu Lateral */
+/* MENU: Menu Lateral */
 
 #menu li {
     list-style: none;
@@ -228,7 +228,7 @@ menu {
     background-color: #4e4e4e;
 }
 
-/* ASIDE: Horario */
+/* MENU: Horario */
 
 #horario {
     margin-top: 10px;
