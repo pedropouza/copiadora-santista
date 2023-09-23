@@ -50,6 +50,50 @@
         </menu>
         <main id="conteudo">
             <h1>Envie sua mensagem!</h1>
+            <form>
+                <p>
+                    <label for="name">Seu Nome: </label>
+                    <input type="text" id="name" name="name">
+                </p>
+                <br>
+                <p>
+                    <label for="email">Seu E-mail:</label>
+                    <input type="email" name="email" id="email">
+                </p>
+                <br>
+                <p>
+                    <label for="contactNumber">Seu Telefone de Contato:</label>
+                    <input type="tel" name="contactNumber" id="contactNumber" placeholder="(13) 99999-9999">
+                </p>
+                <br>
+                <p>
+                    <label for="serviceType">Tipo de Serviço: </label>
+                    <select name="serviceType" id="serviceType">
+                        <option value="" selected disabled></option>
+                        <option value="Cópia / Impressão">Cópia / Impressão</option>
+                        <option value="Carimbo">Carimbo</option>
+                        <option value="Banner">Banner</option>
+                        <option value="Cartão de Visita">Cartão de Visita</option>
+                        <option value="Encadernação">Encadernação</option>
+                        <option value="Adesivo">Adesivo</option>
+                        <option value="Placa Personalizada">Placa Personalizada</option>
+                        <option value="Outro">Outro...</option>
+                    </select>
+                </p>
+                <br>
+                <p>
+                    <label for="message">Mensagem: </label>
+                    <br>
+                    <textarea name="message" id="message" cols="60" rows="5"></textarea>
+                </p>
+                <br>
+                <p>
+                    <label for="attachImg">Anexar Imagem: </label>
+                    <input type="file" name="attachImg" id="attachImg">
+                </p>
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
         </main>
     </div>
     <footer>
