@@ -263,9 +263,20 @@ menu {
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.724);
 }
 
-.open-close span {
-    text-shadow: none;
-    color: green;
+#open-close span{
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.276);
+}
+
+.openned span {
+    color: #008000;
+}
+
+.closed span {
+    color: #ff0000;
+}
+
+.almost-closed-openned span {
+    color: #ffa500;
 }
 
 /* RODAPÉ */
@@ -277,39 +288,3 @@ footer {
     text-align: center;
     color: #fff;
 }
-
-/* 
-@media (max-width: 768px) {     Estilo para telas menores que 768px
-    div#menu-lateral {
-        display: none;
-    }
-    div.button-menu {
-        display: none;
-    }
-}
-
-@media (min-width: 769px) {     Estilo para telas maiores que 769px
-    div.button {
-        display: none;
-    }
-}
-
-@media (max-width: 540px) {
-    nav a {
-        display: none;
-    }
-    nav {
-        height: 37px;
-    }
-    div.button {
-        position: relative;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        width: 60px;
-        height: 37px;
-        top: -10px;
-        margin: 0px 25px;
-    }
-}
- */
