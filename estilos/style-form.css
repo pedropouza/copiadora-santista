@@ -49,8 +49,28 @@ textarea {
   resize: none;
 }
 
-form button {
+label[for="attachImg"] {
+  display: inline-block;
+  position: static;
+  pointer-events: all;
+  cursor: pointer;
   margin: 10px;
+  border: none;
+  background-color: #c1f9ff;
+  color: #205a69cb;
+  padding: 15px;
+}
+
+label[for="attachImg"]:hover {
+  outline: 2px solid #205b69;
+}
+
+#attachImg {
+  display: none;
+}
+
+form button {
+  margin: 10px 25px;
   padding: 10px 30px;
   border: 2px solid #205b69;
   background-color: #c1f9ff;
