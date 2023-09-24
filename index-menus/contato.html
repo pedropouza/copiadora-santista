@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../estilos/media-query.css">
     <link rel="stylesheet" href="../estilos/style-form.css">
     <script src="../script.js" defer></script>
+    <script src="../scripts/form-script.js" defer></script>
 </head>
 <body onresize="redimensiona()">
     <header>
@@ -55,24 +56,22 @@
                 <fieldset>
                     <legend>Seu Contato</legend>
                     <p>
-                        <label for="name">Nome: </label>
                         <input type="text" id="name" name="name">
+                        <label for="name">Nome</label>
                     </p>
                     
                     <p>
-                        <label for="email">E-mail: </label>
                         <input type="email" name="email" id="email">
+                        <label for="email">E-mail</label>
                     </p>
                     
                     <p>
-                        <label for="contactNumber">Telefone: </label>
-                        <input type="tel" name="contactNumber" id="contactNumber" placeholder="(13) 99999-9999">
+                        <input type="tel" name="contactNumber" id="contactNumber">
+                        <label for="contactNumber">Telefone</label>
                     </p>
                 </fieldset>
-                
                 <fieldset>
                 <p>
-                    <label for="serviceType">Tipo de Serviço: </label>
                     <select name="serviceType" id="serviceType">
                         <option value="" selected disabled></option>
                         <option value="Cópia / Impressão">Cópia / Impressão</option>
@@ -84,22 +83,19 @@
                         <option value="Placa Personalizada">Placa Personalizada</option>
                         <option value="Outro">Outro...</option>
                     </select>
+                    <label for="serviceType">Tipo de Serviço</label>
                 </p>
-                
                     <legend>Serviço</legend>
                     <p>
-                        <label for="message">Mensagem: </label>
-                        <br>
                         <textarea name="message" id="message"></textarea>
+                        <label for="message">Mensagem</label>
                     </p>
-                    <br>
                     <p>
-                        <label for="attachImg">Anexar Imagem: </label>
+                        <label for="attachImg">X</label>
                         <input type="file" name="attachImg" id="attachImg">
                     </p>
-                    <br>
-                    <button type="submit">Enviar</button>
                 </fieldset>
+                <button type="submit">Enviar</button>
             </form>
             <p>OBS: A resposta poderá ser via e-mail ou telefone, com um prazo máximo de 2 dias.</p>
         </main>
