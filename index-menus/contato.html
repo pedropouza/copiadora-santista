@@ -88,9 +88,14 @@
                         <textarea name="message" id="message"></textarea>
                         <label for="message">Mensagem</label>
                     </p>
-                    <div>
-                        <label for="attachImg">Adicionar Imagem</label>
-                        <input type="file" name="attachImg" id="attachImg">
+                    <div id="files">
+                        <div>
+                            <label for="attachImg">Anexar Documento</label>
+                            <input type="file" name="attachImg" id="attachImg" multiple>
+                        </div>
+                        <p>Aceitamos arquivos JPEG, PNG e PDF apenas!</p>
+                        <ul id="fileList"></ul>
+                        <button id="resetListBtn" type="button">Remover Arquivos</button>
                     </div>
                 </fieldset>
                 <button type="submit">Enviar</button>
