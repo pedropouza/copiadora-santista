@@ -14,7 +14,7 @@
     --font-subtitulo: 'Montserrat', sans-serif;
     --cor-header: #5dafb8;
     --cor-principal: #205b69;
-    --cor-h1: #cbb98d;
+    --cor-h1: #ede3ca;
     --fonte-h1: 'Alkatra', cursive;
     --fonte-p: 'Roboto Condensed', sans-serif;
 }
@@ -43,7 +43,7 @@ header {
 header h1 {
     font-family: var(--fonte-titulo);
     font-size: 2.4em;
-    color: #fff;
+    color: var(--cor-h1);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.404);
     text-transform: uppercase;
 }
@@ -66,7 +66,7 @@ nav {
     top: -1px;
     background-color: var(--cor-principal);
     text-align: center;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.462);
+    box-shadow: 0px 2px 2px #1a46525f;
     overflow: hidden;
 }
 
@@ -122,19 +122,19 @@ nav a:hover::after {
 /* PRINCIPAL: Onde vai ficar o conteudo */
 
 main {
-    background-color: #fff;
+    background-color: #fefefe;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.199);
     border-radius: 0 0 10px 10px;
     margin: 0 10px;
-    padding: 10px;
+    padding: 0 10px 10px 10px;
     width: 100%;
     overflow: hidden;
 }
 
 main > h1 {
-    background-image: linear-gradient(to right, var(--cor-principal), #5dafb855);
-    color: var(--cor-h1);
-    text-shadow: 1px 1px 1px #00000052;
+    background-image: linear-gradient(to bottom, var(--cor-principal), var(--cor-header));
+    color: #eee;
+    text-shadow: 0 2px 1px var(--cor-principal);
     font-family: var(--fonte-h1);
     font-size: 2em;
     padding: 3px 20px;
