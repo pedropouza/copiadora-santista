@@ -14,7 +14,7 @@
     --font-subtitulo: 'Montserrat', sans-serif;
     --cor-header: #5dafb8;
     --cor-principal: #205b69;
-    --cor-h1: #ede3ca;
+    --cor-shadow-h1: #ede3ca8a;
     --fonte-h1: 'Alkatra', cursive;
     --fonte-p: 'Roboto Condensed', sans-serif;
 }
@@ -43,8 +43,8 @@ header {
 header h1 {
     font-family: var(--fonte-titulo);
     font-size: 2.4em;
-    color: var(--cor-h1);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.404);
+    color: #eee;
+    text-shadow: 1px 1px 4px var(--cor-shadow-h1);
     text-transform: uppercase;
 }
 
