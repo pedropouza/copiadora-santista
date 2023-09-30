@@ -135,7 +135,7 @@ switch (weekDate) {
         } else if (formattedHour >= 8 && formattedHour < 9) {
             storeOpenSoon()
         } else if (formattedHour >= 9 && formattedHour < 16) {
-            storeOpen()
+            storeOpen(17)
         } else if (formattedHour == 16) {
             storeAlmostClosed(17)
         } else {

@@ -33,4 +33,11 @@
         position: initial;
         margin-right: 10px;
     }
+    #carousel-img {
+        width: 240px;
+    }
+    #carousel-container {
+        height: 240px;
+        max-width: 410px;
+    }
 }   
