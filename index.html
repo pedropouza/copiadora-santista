@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Copiadora Santista</title>
-    <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
     <script src="./script.js" defer></script>
+    <script src="scripts/carousel.js" defer></script>
 </head>
 <body onresize="redimensiona()">
     <header>
@@ -49,18 +50,21 @@
             </div>
         </menu>
         <main id="conteudo">
+            <div id="carousel-container">
+                <button id="prevBtn" class="carousel-button">&larr;</button>
+                <div id="carousel">
+                    <div id="carousel-img">
+                        <img src="imagens/copias.jpg" alt="Cópias">
+                        <img src="imagens/carimbo.jpg" alt="Carimbo">
+                        <img src="imagens/encadernacao.jpg" alt="Encadernação">
+                    </div>
+                </div>
+                <button id="nextBtn" class="carousel-button">&rarr;</button>
+            </div>
             <h1>Sobre nós...</h1>
             <p>Somos uma empresa criada em 2002, com o objetivo de atender a todos os clientes que necessitam de serviços de uma copiadora completa.</p>
             <p>Oferecemos desde uma simples cópia à uma perfeita impressão de um banner para você - pessoa física ou para sua empresa.</p>
             <p>Trabalhamos com os melhores equipamentos do mercado de impressão: Xerox e HP.</p>
-
-            <h1>O que fazemos?</h1>
-            <p>Todos os tipos de serviços personalizados que precisar, como:</p>
-            <div id="itens">
-                <a href="menu-lateral/carimbo.html"><div id="carimbo"><span>Carimbos</span></div></a>
-                <a href="menu-lateral/encadernacao.html"><div id="encadernacao"><span>Encadernação</span></div></a>
-                <a href="menu-lateral/copia.html"><div id="copia"><span>Cópias</span></div></a>
-            </div>
         </main>
     </div>
     <footer>

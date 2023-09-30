@@ -62,7 +62,7 @@ nav {
     justify-content: center;
     align-items: center;
     position: sticky;
-    z-index: 1;
+    z-index: 999;
     top: -1px;
     background-color: var(--cor-principal);
     text-align: center;
@@ -150,57 +150,48 @@ main > p {
     font-size: 1.1em;
 }
 
+
 /* Imagens */
 
-#itens {
+#carousel-container {
     width: 100%;
-    padding: 10px 0 10px 0;
-    background-image: linear-gradient(to left, #fff, var(--cor-principal), #fff);
-    height: max-content;
+    height: 300px;
+    background-color: var(--cor-principal);
+    overflow: hidden;
     display: flex;
+    justify-content: center;
+    text-align: center;
     align-items: center;
-    flex-direction: column;
-    gap: 10px;
+}
+
+.carousel-button {
+    height: 100%;
+    width: 100px;
+    background-color: #33333388;
+    color: #eee;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-button:hover {
+    filter: brightness(1.4);
+}
+
+#carousel {
+    display: block;
     overflow: hidden;
 }
 
-#itens div:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.483);
+#carousel-img {
+    display: flex;
+    width: 300px;
+    transition: transform 0.3s;
 }
 
-#itens div {
-    border-radius: 5px;
-    width: 400px;
-    height: 400px;
-    background-size: cover;
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-#itens span {
-    display: inline-block;
-    color: white;
-    background-color: #333333c9;
-    text-align: center;
-    font-size: 1.5em;
-    font-variant: small-caps;
-    text-shadow: 1px 1px 1px black;
-    padding: 20px;
-    margin-top: 15px;
+#carousel img {
     width: 100%;
-}
-
-#carimbo {
-    background: url(../imagens/carimbo.jpg) no-repeat;
-}
-
-#encadernacao {
-    background: url(../imagens/encadernacao.jpg) no-repeat;
-}
-
-#copia {
-    background: url(../imagens/copias.jpg) no-repeat;
 }
 
 
