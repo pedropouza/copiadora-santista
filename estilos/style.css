@@ -154,7 +154,7 @@ main > p {
 /* Imagens */
 
 #carousel-container {
-    width: 100%;
+    max-width: 500px;
     height: 300px;
     background-color: var(--cor-principal);
     overflow: hidden;
@@ -162,12 +162,19 @@ main > p {
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin: auto;
+}
+
+#carousel-area {
+    width: 100%;
+    height: auto;
+    background-color: var(--cor-principal);
 }
 
 .carousel-button {
     height: 100%;
     width: 100px;
-    background-color: #33333388;
+    background-color: #333333b8;
     color: #eee;
     font-size: 1.5em;
     border: none;
@@ -176,12 +183,12 @@ main > p {
 }
 
 .carousel-button:hover {
-    filter: brightness(1.4);
+    filter: brightness(1.5);
 }
 
 #carousel {
     display: block;
-    overflow: hidden;
+
 }
 
 #carousel-img {
