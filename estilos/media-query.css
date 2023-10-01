@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+:root{
+    --cor-botao: #5dafb8;
+    --cor-botao-hover: #013a40;
+}
+
 @media screen and (max-width: 768px) {
     #botao {
         display: flex;
@@ -12,12 +17,12 @@
         background-color: #333;
         font-size: 1.5em;
         color: #fff;
-        background-color: #5dafb8;
+        background-color: var(--cor-botao);
         border-radius: 50%;
         user-select: none;
     }
     #botao:hover {
-        background-color: #013a40;
+        background-color: var(--cor-botao-hover);
     }
     menu {
         display: none;

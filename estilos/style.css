@@ -14,6 +14,7 @@
     --font-subtitulo: 'Montserrat', sans-serif;
     --cor-header: #5dafb8;
     --cor-principal: #205b69;
+    --cor-menu-lateral: #4c8c93;
     --cor-shadow-h1: #ede3ca8a;
     --fonte-h1: 'Alkatra', cursive;
     --fonte-p: 'Roboto Condensed', sans-serif;
@@ -220,15 +221,19 @@ menu {
 #menu li a {
     display: block;
     padding: 10px;
-    border-bottom: 1px solid black;
-    color: white;
-    background-color: #333;
+    border-bottom: 1px solid var(--cor-principal);
+    color: #eee;
+    background-color: var(--cor-menu-lateral);
     text-decoration: none;
     font-size: 0.9em;
+    transition: 0.1s;
 }
 
 #menu li a:hover {
-    background-color: #4e4e4e;
+    background-color: #fefefe;
+    color: var(--cor-principal);
+    text-indent: 10px;
+    font-weight: bold;
 }
 
 /* MENU: Horario */
@@ -238,15 +243,15 @@ menu {
     padding: 10px;
     text-align: center;
     box-shadow: 0px 0px 5px #7b7b7b;
-    background-color: #aaaaaa;
-    color: #fff;
+    background-color: #fdfdfd;
+    color: #fefefe;
     user-select: none;
 }
 
 #horario h1 {
     font-size: 1.3em;
     padding: 5px;
-    background-color: #333;
+    background-color: var(--cor-menu-lateral);
     margin: -10px -10px 5px -10px;
 }
 
@@ -260,12 +265,13 @@ menu {
 #horario p {
     margin-bottom: 10px;
     font-weight: bold;
+    color: var(--cor-principal);
     font-size: 0.95em;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.724);
+    text-shadow: 0px 0px 10px var(--cor-shadow-h1);
 }
 
 #open-close span{
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.276);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.116);
 }
 
 .openned span {
