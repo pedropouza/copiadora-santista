@@ -1,0 +1,21 @@
+iframe {
+  width: 100%;
+  height: 400px;
+}
+
+#conteudo a {
+  font-style: italic;
+  text-align: center;
+  font-size: 0.9em;
+  color: #205b69;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#conteudo {
+  height: 520px;
+}
+
+#map-area {
+  margin: 0 10px 0 10px;
+}
