@@ -1,22 +1,32 @@
-let button = document.getElementById("botao")
+const button = document.getElementById("botao")
+const lateral = document.getElementById("lateral")
+const conteudo = document.getElementById('conteudo')
 function showMenu() {
-    if (lateral.style.display == "none") {
-        lateral.style.display = "block"
-        conteudo.style.display = "none"
+    if (lateral.classList == 'hide-element' || lateral.classList == "") {
+        lateral.classList.remove('hide-element')
+        lateral.classList.add('show-element')
+        conteudo.classList.remove('show-element')
+        conteudo.classList.add('hide-element')
         button.innerText = "close"
     } else {
-        lateral.style.display = "none"
-        conteudo.style.display = "block"
+        lateral.classList.remove('show-element')
+        lateral.classList.add('hide-element')
+        conteudo.classList.remove('hide-element')
+        conteudo.classList.add('show-element')
         button.innerText = "menu"
     }
 }
 function redimensiona() {
     if (window.innerWidth >= 768) {
-        lateral.style.display = "block"
-        conteudo.style.display = "block"
+        lateral.classList.remove('hide-element')
+        lateral.classList.add('show-element')
+        conteudo.classList.remove('hide-element')
+        conteudo.classList.add('show-element')
     } else {
-        lateral.style.display = "none"
-        conteudo.style.display = "block"
+        lateral.classList.remove('show-element')
+        lateral.classList.add('hide-element')
+        conteudo.classList.remove('hide-element')
+        conteudo.classList.add('show-element')
         button.innerText = "menu"
     }
 }

@@ -2,7 +2,6 @@
 
 :root{
     --cor-botao: #5dafb8;
-    --cor-botao-hover: #013a40;
 }
 
 @media screen and (max-width: 768px) {
@@ -20,9 +19,6 @@
         background-color: var(--cor-botao);
         border-radius: 50%;
         user-select: none;
-    }
-    #botao:hover {
-        background-color: var(--cor-botao-hover);
     }
     menu {
         display: none;

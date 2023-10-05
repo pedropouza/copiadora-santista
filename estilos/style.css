@@ -57,6 +57,12 @@ header p {
 }
 
 /* MENU DE NAVEGAÇÃO */
+.show-element {
+    display: block;
+}
+.hide-element {
+    display: none;
+}
 
 nav {
     display: flex;
