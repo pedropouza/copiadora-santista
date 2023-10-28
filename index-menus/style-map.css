@@ -6,16 +6,24 @@ iframe {
 #conteudo a {
   font-style: italic;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 0.95em;
   color: #205b69;
   text-decoration: none;
   font-weight: bold;
 }
 
+#conteudo a p {
+  padding: 10px;
+}
+
 #conteudo {
-  height: 520px;
+  height: max-content;
+}
+
+#conteudo a {
+  margin: 0;
 }
 
 #map-area {
-  margin: 0 10px 0 10px;
+  margin: 15px;
 }
